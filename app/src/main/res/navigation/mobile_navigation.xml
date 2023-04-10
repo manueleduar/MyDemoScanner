@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_qr">
+
+    <fragment
+        android:id="@+id/navigation_qr"
+        android:name="com.example.mydemoscanner.ui.qr.QrFragment"
+        android:label="@string/title_qr"
+        tools:layout="@layout/fragment_qr" />
+
+    <fragment
+        android:id="@+id/navigation_barcode"
+        android:name="com.example.mydemoscanner.ui.barcode.BarcodeFragment"
+        android:label="@string/title_barcode"
+        tools:layout="@layout/fragment_barcode" />
+
+    <fragment
+        android:id="@+id/navigation_text_scanner"
+        android:name="com.example.mydemoscanner.ui.TextScanner.NotificationsFragment"
+        android:label="@string/title_text_scanner"
+        tools:layout="@layout/fragment_textscanner" />
+</navigation>
