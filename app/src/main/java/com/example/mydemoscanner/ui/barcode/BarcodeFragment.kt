@@ -37,6 +37,7 @@ class BarcodeFragment : Fragment() {
         override fun barcodeResult(result: BarcodeResult?) {
             result?.let {
                 binding.resultTextView.text = result.text
+                scannerView.pause()
                 scannerView.visibility = View.GONE
                 binding.scanAgainButton.visibility = View.VISIBLE
             }
